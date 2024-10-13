@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./header.css";
+
 export function Header({ onLoginClick, isLoggedIn, onLogout }) {
   return (
     <header className="header">

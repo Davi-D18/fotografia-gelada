@@ -1,6 +1,8 @@
 import React from "react";
 import { ImageCard } from "../Image-card/ImageCard.jsx";
 
+import "./imageGrid.css";
+
 export function ImageGrid({ handleLikeClick, isLoggedIn, onImageClick }) {
   const images = [
     {
@@ -39,7 +41,7 @@ export function ImageGrid({ handleLikeClick, isLoggedIn, onImageClick }) {
       comments: 1,
     },
     {
-      id: 5,
+      id: 6,
       src: "https://www.thoughtco.com/thmb/esfxRGAAqEmPET82KzVdVSA6aA0=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/MountEverest_PhFengWei_Getty2-56a16b185f9b58b7d0bf2e87.jpg",
       title: "Alpes Suiços",
       likes: 11,

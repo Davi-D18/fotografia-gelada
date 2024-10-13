@@ -2,6 +2,8 @@ import React from "react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
 
+import "./footer.css";
+
 export function Footer() {
   return (
     <footer className="footer">

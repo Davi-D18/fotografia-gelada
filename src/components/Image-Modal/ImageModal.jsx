@@ -1,4 +1,7 @@
 import React from "react";
+import { FaHeart } from "react-icons/fa";
+
+import "./imagemModal.css";
 
 export function ImageModal({ image, onClose, isLoggedIn }) {
   const handleLike = () => {
@@ -35,7 +38,10 @@ export function ImageModal({ image, onClose, isLoggedIn }) {
         <div className="modal-body">
           <img src={image.src} alt={image.title} />
           <div className="interactions-modal">
-            <button onClick={handleLike}>❤️ {image.likes}</button>
+            <button onClick={handleLike}>
+              {" "}
+              {<FaHeart />} {image.likes}
+            </button>
             <button onClick={handleComment}>
               💬 {image.comments} Comentários
             </button>

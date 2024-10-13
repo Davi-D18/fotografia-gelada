@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+# Projeto Fotografia Gelada
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Visão Geral
+Este projeto é de um pequeno simulado de uma das provas práticas do SAEP (Sistema de Avaliação do Ensino Profissional) feito no curso Técnico em Informática para Internet da Instituição Senai
 
-## Available Scripts
+Data: 08/10
 
-In the project directory, you can run:
+## Tecnologias Usadas
+- **React**
+- **CSS**
 
-### `yarn start`
+### Bibliotecas Usadas
+- **React-icons**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Descrição das Pastas e Arquivos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```plaintext
 
-### `yarn test`
+|── src/
+│   ├── components/
+│   │   ├── Footer/
+│   │   │   ├── footer.css
+│   │   │   └── Footer.jsx
+│   │   ├── Header/
+│   │   │   ├── header.css
+│   │   │   └── Header.jsx
+│   │   ├── Image-card/
+│   │   │   ├── imageCard.css
+│   │   │   └── ImageCard.jsx
+│   │   ├── Image-grid/
+│   │   │   ├── imageGrid.css
+│   │   │   └── ImageGrid.jsx
+│   │   ├── Image-Modal/
+│   │   │   ├── imagemModal.css
+│   │   │   └── ImageModal.jsx
+│   │   ├── Login-Modal/
+│   │   │   ├── loginModal.css
+│   │   │   └── LoginModal.jsx
+│   ├── styles/
+│   │   └── style.css
+│   ├── App.jsx
+│   ├── index.js
+├── .gitignore
+├── package.json
+├── README.md
+└── yarn.lock
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
 
-### `yarn build`
+## Descrição das Pastas e Arquivos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `src/`
+Diretório principal que contém todo o código-fonte do projeto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `components/`
+Contém todos os componentes reutilizáveis do projeto. Cada componente tem sua própria pasta com arquivos de estilo (CSS) e o arquivo de código (JSX).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### `Footer/`
+- **`footer.css`**: Estilos específicos para o rodapé (Footer)
+- **`Footer.jsx`**: Componente JSX que renderiza o rodapé da página
 
-### `yarn eject`
+#### `Header/`
+- **`header.css`**: Estilos para o cabeçalho da página
+- **`Header.jsx`**: Componente JSX que renderiza o cabeçalho
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### `Image-card/`
+- **`imageCard.css`**: Estilos para os cartões que exibem imagens. Define o layout e o design desses cartões.
+- **`ImageCard.jsx`**: Componente JSX que exibe um cartão com imagem, título, e descrição.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### `Image-grid/`
+- **`imageGrid.css`**: Estilos para o layout de grade de imagens, organizando vários cards em uma estrutura de grade.
+- **`ImageGrid.jsx`**: Componente JSX que renderiza uma galeria de imagens no formato de grade.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### `Image-Modal/`
+- **`imagemModal.css`**: Estilos para o modal que exibe uma imagem ampliada quando um card é clicado.
+- **`ImageModal.jsx`**: Componente JSX que cria um modal para exibir uma imagem em tamanho maior.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### `Login-Modal/`
+- **`loginModal.css`**: Estilos para o modal de login, incluindo campos de entrada e botões.
+- **`LoginModal.jsx`**: Componente JSX que renderiza o modal de login, permitindo que os usuários façam login no sistema.
 
-## Learn More
+### `styles/`
+- **`style.css`**: Estilos globais aplicados em toda a aplicação, como tipografia e cores padrão.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `App.jsx`
+Componente principal que serve como ponto de entrada da aplicação. Organiza e renderiza os outros componentes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `index.js`
+Arquivo de entrada que inicializa a aplicação React e renderiza o componente `App` na página.
 
-### Code Splitting
+### Arquivos de Configuração e Documentação
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **`.gitignore`**: Define quais arquivos e pastas serão ignorados pelo Git, como dependências e arquivos temporários.
 
-### Analyzing the Bundle Size
+- **`package.json`**: Contém informações sobre o projeto, como nome, versão, dependências e scripts para executar e construir o projeto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **`README.md`**: Este arquivo, que contém a documentação do projeto.
 
-### Making a Progressive Web App
+- **`yarn.lock`**: Gerado pelo Yarn para garantir que todos os desenvolvedores utilizem as mesmas versões das bibliotecas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Executando o projeto
 
-### Advanced Configuration
+### 1. Instale as dependências
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+No diretório raiz do projeto, execute o seguinte comando para instalar todas as dependências necessárias:
 
-### Deployment
+```bash
+yarn install
+``` 
+ou 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm install 
+```
 
-### `yarn build` fails to minify
+Após a instalação das dependências, inicie o servidor de desenvolvimento com o comando:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+yarn start
+```
+ou 
+```bash
+npm start
+```

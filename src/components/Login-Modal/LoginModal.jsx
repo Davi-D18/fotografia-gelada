@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "./loginModal.css";
+
 export function LoginModal({ onLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -31,7 +33,7 @@ export function LoginModal({ onLogin }) {
 
   return (
     <div className="modal">
-      <div className="modal-content">
+      <div className="modal-content-login">
         <h2>Login</h2>
         <input
           type="email"
@@ -51,8 +53,10 @@ export function LoginModal({ onLogin }) {
         />
         {error.password && <p className="error-message">{error.password}</p>}
 
-        <button onClick={handleSubmit}>Entrar</button>
-        <button onClick={() => onLogin(false)}>Cancelar</button>
+        <div className="container-button">
+          <button onClick={handleSubmit}>Entrar</button>
+          <button onClick={() => onLogin(false)}>Cancelar</button>
+        </div>
       </div>
     </div>
   );

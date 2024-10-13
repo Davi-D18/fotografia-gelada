@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FaRegHeart, FaHeart } from "react-icons/fa";
+
+import "./imageCard.css";
 
 export function ImageCard({
   image,
@@ -29,7 +32,7 @@ export function ImageCard({
       />
       <div className="interactions">
         <button onClick={handleLike} className={liked ? "liked" : ""}>
-          ❤️ {likes}
+          {liked ? <FaHeart /> : <FaRegHeart />} {likes}
         </button>
         <button onClick={() => alert("Comentário...")}>💬 Comentar</button>
       </div>
