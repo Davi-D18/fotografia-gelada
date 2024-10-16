@@ -54,6 +54,11 @@ header .logo {
 }
 
 @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .login-btn {
     right: 1rem;
   }

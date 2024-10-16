@@ -33,10 +33,15 @@
   padding: 10px 8px;
   cursor: pointer;
   background-color: transparent;
+  font-size: 20px;
 
   display: flex;
   align-items: center;
   gap: 9px;
+}
+
+.interactions > button > svg {
+  font-size: 23px;
 }
 
 .liked > svg {
